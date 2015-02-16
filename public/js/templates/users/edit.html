@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="span8">
+
+    <div class="page-header">
+      <h1>Edit User</h1>
+    </div>
+
+    <form class="form-horizontal">
+      <fieldset>
+
+        <div class="control-group">
+          <label for="name-input" class="control-label">Name</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-user"></i>
+              </span>
+              <%= user.username %>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="email-input" class="control-label">Email</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-envelope"></i>
+              </span>
+              <input type="text" class="input-xlarge" id="email-input" value="<%= user.email %>" />
+              <p class="help-block">Enter a valid email above.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="company-input" class="control-label">Roles</label>
+          <div class="controls" id="roles-div">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-briefcase"></i>
+              </span>
+              <table style="width: 100%">
+              <% _.each(user.roles, function(role) { %>
+                <tr><td>
+                <%= role.name%><td>Member <input type="radio" name="<%=role._id%>" value="allow" <%if(role.allow){%> checked<%}%>><td>Not Member <input type="radio" name="<%=role._id%>" value="deny" <%if(!role.allow){%> checked<%}%>> </tr>
+              <% }); %>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="born-input" class="control-label">Permissions</label>
+          <div class="controls" id="perms-div">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-time"></i>
+              </span>
+              <table style="width: 100%">
+              <% _.each(user.perms, function(perm) { %>
+                <tr><td>
+                <%= perm.name%>
+                <td>Allow <input type="radio" name="<%=perm._id%>" value="allow" <%if(perm.allow){%> checked<%}%>>
+                <td>Deny <input type="radio" name="<%=perm._id%>" value="deny" <%if(perm.deny){%> checked<%}%>> 
+                <td align='right'>Inherit<%if(perm.inherit_allow) {%>(allow)<%} else if(perm.inherit_deny) {%>(deny)<%}%>
+                    <input type="radio" name="<%=perm._id%>" value="inherit" <%if (perm.inherit_allow || perm.inherit_deny){%> checked<%}%>>
+                </tr>
+              <% }); %>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <a class="btn save-btn">Save</a>
+          <a class="btn back-btn">Back</a>
+        </div>
+
+      </fieldset>
+    </form>
+
+  </div>
+</div>

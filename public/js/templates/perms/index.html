@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="span12">
+
+    <div class="page-header">
+      <h1>List of permissions</h1><br>
+      <a href="#/perms/new" class="btn edit-btn">Add Permission</a>
+    </div>
+
+    <p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><i class="icon-user"></i>Name</th>
+            <th><i class="icon-envelope"></i>Key</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(perms, function(perm) { %>
+          <tr>
+            <td>
+              <a href="#/perms/<%- perm._id %>"><%- perm.name %></a>
+            </td>
+            <td>
+              <%- perm.key %>
+            </td>
+          </tr>
+        <% }); %>
+        </tbody>
+      </table>
+    </p>
+
+  </div>
+</div>

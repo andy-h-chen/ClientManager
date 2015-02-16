@@ -25,5 +25,10 @@
       "PORT"     : "27017",
       "DATABASE" : "clients-main"
     }
+  },
+  "mysql": {
+    "host"         : "localhost",
+    "user"         : "root",
+    "password"     : "chenhuan"
   }
 }

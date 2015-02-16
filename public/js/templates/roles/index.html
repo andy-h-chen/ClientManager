@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="span12">
+
+    <div class="page-header">
+      <h1>List of roles</h1><br>
+      <a href="#/roles/new" class="btn edit-btn">Add Role</a>
+    </div>
+
+    <p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><i class="icon-user"></i>Name</th>
+            <th><i class="icon-envelope"></i>Permissions</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(roles, function(role) { %>
+          <tr>
+            <td>
+              <a href="#/roles/<%- role._id %>"><%- role.name %></a>
+            </td>
+            <td>
+                <!--permissions-->
+            </td>
+          </tr>
+        <% }); %>
+        </tbody>
+      </table>
+    </p>
+
+  </div>
+</div>

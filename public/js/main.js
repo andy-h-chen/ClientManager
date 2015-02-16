@@ -20,7 +20,7 @@ requirejs.config({
   paths: {
     'text'             : 'lib/text',
     'jquery'           : 'lib/jquery',
-    'underscore'       : 'lib/underscore-amd',
+    'underscore'       : 'lib/underscore',
     'backbone'         : 'lib/backbone-amd',
     'bootstrap'        : 'lib/bootstrap',
     'moment'           : 'lib/moment',
@@ -29,14 +29,24 @@ requirejs.config({
     'Router'           : 'router',
     'ClientModel'      : 'models/client',
     'ClientCollection' : 'collections/clients',
+    'SessionModel'     : 'models/session',
+    'UserModel'        : 'models/user',
+    'UserCollection'   : 'collections/users',
     'HomeView'         : 'views/home',
+    'LoginView'        : 'views/login',
     'HeaderView'       : 'views/header',
     'ClientListView'   : 'views/clients/index',
     'ClientEditView'   : 'views/clients/edit',
-    'ClientView'       : 'views/clients/show'
+    'ClientView'       : 'views/clients/show',
+    'UserListView'     : 'views/users/index',
+    'UserView'         : 'views/users/show'
   }
 });
 
-require(['App'], function(App, Client) {
-  App.initialize();
+require([
+    'App',
+    'SessionModel'
+], function(App, SessionModel, Client) {
+    App.initialize();
+    App.session = new SessionModel({});
 });

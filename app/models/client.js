@@ -55,6 +55,7 @@ module.exports = function(mongoose) {
   }
 
   Client.statics.search = function search(params, callback) {
+    console.log('Client.statics.search', params);
     var Model = mongoose.model('Client'),
         query = Model.find();
 

@@ -10,7 +10,9 @@ ClientsController = function(app, mongoose, config) {
 
   var Client = mongoose.model('Client');
 
-  app.get(v1 + '/clients', function index(req, res, next) {
+  app.get(v1 + '/clients', app.ensureAuthenticated, function index(req, res, next) {
+    console.log(req.url, req.query);
+    
     Client.search(req.query, function(err, clients) {
       checkErr(
         next,
@@ -25,6 +27,7 @@ ClientsController = function(app, mongoose, config) {
   });
 
   app.get(v1 + '/clients/:id', function show(req, res, next) {
+    console.log(req.url);
     Client.findById(req.params.id, function(err, client) {
       checkErr(
         next,
@@ -39,6 +42,7 @@ ClientsController = function(app, mongoose, config) {
   });
 
   app.post(v1 + '/clients', function create(req, res, next) {
+    log('app.post', req.url);
     var newClient;
 
     // disallow other fields besides those listed below

@@ -17,7 +17,9 @@
       "uglify-js"       : "1.2.x",
       "underscore"      : "*",
       "gzippo"          : "0.1.4",
-      "requirejs"       : "2.0.2"
+      "requirejs"       : "2.0.2",
+      "passport"        : ">= 0.0.0",
+      "passport-local"  : ">= 0.0.0",
     },
     "devDependencies": {
       "mocha"   : "1.1.x",

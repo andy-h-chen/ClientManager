@@ -4,7 +4,7 @@ define('ClientView', [
   'backbone',
   'moment',
   'text!templates/clients/show.html',
-  'ClientModel'
+  'UserModel'
 ], function($, _, Backbone, moment, tpl, Client) {
   var ClientView;
 
