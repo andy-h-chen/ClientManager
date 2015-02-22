@@ -26,6 +26,9 @@ define('HeaderView', [
     select: function(item) {
       $('.nav li').removeClass('active');
       $('.' + item).addClass('active');
+    },
+    updateLoginStatus: function (status) {
+        $('#login').text(status).attr('href', '#/logout');
     }
   });
 

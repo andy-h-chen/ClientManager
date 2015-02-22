@@ -44,9 +44,7 @@ requirejs.config({
 });
 
 require([
-    'App',
-    'SessionModel'
-], function(App, SessionModel, Client) {
+    'App'
+], function(App, Client) {
     App.initialize();
-    App.session = new SessionModel({});
 });

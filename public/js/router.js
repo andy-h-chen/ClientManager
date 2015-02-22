@@ -30,6 +30,7 @@ define('Router', [
             ''                  : 'home',
             'home'              : 'home',
             'login'             : 'login',
+            'logout'            : 'logout',
             'clients'           : 'showClients', // /#/clients
             'clients/new'       : 'addClient',
             'clients/:id'       : 'showClient',
@@ -59,6 +60,9 @@ define('Router', [
         $('header').hide().html(this.headerView.render().el).fadeIn('slow');
         $('footer').fadeIn('slow');
     },
+    getHeaderView: function () {
+        return this.headerView;
+    },
     home: function() {
         this.headerView.select('home-menu');
 
@@ -71,9 +75,19 @@ define('Router', [
         this.headerView.select('login-menu');
 
         if (!this.loginView) {
-                this.loginView = new LoginView();
+            this.loginView = new LoginView();
         }
-        this.elms['page-content'].html(this.loginView.render().el);
+        this.elms['page-content'].html(this.loginView.renderLogin().el);
+    },
+    loginUserInfo: function() {
+        if (!this.loginView) {
+            this.loginView = new LoginView();
+            return;
+        }
+        this.elms['page-content'].html(this.loginView.renderUserInfo().el);
+    },
+    logout: function() {
+        this.loginView.logout();
     },
     showClients: function() {
         var that = this;

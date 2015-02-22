@@ -3,8 +3,9 @@ define('App', [
     'underscore',
     'backbone',
     'Router',
+    'SessionModel',
     'bootstrap',
-], function($, _, Backbone, Router) {
+], function($, _, Backbone, Router, SessionModel) {
     var app = {
         root: '/',
         URL: '/',
@@ -12,6 +13,13 @@ define('App', [
         initialize: function() {
             app.router = new Router();
             Backbone.history.start();
+            app.session = new SessionModel({});
+        },
+        getRouter: function() {
+            return this.router;
+        },
+        getSession: function() {
+            return this.session;
         }
     };
   // TODO: error handling with window.onerror

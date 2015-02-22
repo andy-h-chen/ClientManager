@@ -59,6 +59,19 @@ AuthController = function(app, mongoose, passport, config) {
             });
         })(req, res, next);
     });
+
+    app.post(v1 + '/auth/logout', app.ensureAuthenticated, function(req, res, next) {
+        console.log('logout', req.isAuthenticated());
+        if (req.isAuthenticated()) {
+            req.logout();
+            req.session.destroy();
+            console.log(req.isAuthenticated());
+            res.json({});
+            //req.session.messages = req.i18n.__("Log out successfully.");
+        } else {
+            res.json({error: 'Please log in.'});
+        }
+    });
 };
 
 module.exports = AuthController;

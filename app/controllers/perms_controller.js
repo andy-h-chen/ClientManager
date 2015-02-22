@@ -9,7 +9,7 @@ PermissionsController = function(app, mongoose, config) {
 
     var Permission = mongoose.model('Permission');
 
-    app.get(app.v1 + '/perms', app.ensureAuthenticated, function index(req, res, next) {
+    app.get(app.v1 + '/perms', app.canAccessAdmin, function index(req, res, next) {
         console.log(req.url, req.query);
     
         Permission.find(function(err, perms) {

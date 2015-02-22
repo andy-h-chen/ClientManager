@@ -13,8 +13,18 @@ var connect        = require('connect'),
 
 app.v1 = '/api/v1';
 app.ensureAuthenticated = function(req, res, next) {
-    if (req.isAuthenticated()) { return next(); }
+    if (req.isAuthenticated()) {
+        return next();
+    }
     res.json({error: 'Please login.'});
+}
+
+app.canAccessAdmin = function(req, res, next) {
+    if (req.isAuthenticated() && req.user.hasAccess('access_admin')) {
+        return next();
+    }
+
+    res.json({error: 'No access to admin.'});
 }
 
 utils.loadConfig(__dirname + '/config', function(config) {

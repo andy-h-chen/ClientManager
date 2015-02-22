@@ -51,21 +51,33 @@ UsersController = function(app, mongoose, config) {
                     newAttributes = _.pick(req.body, 'email', 'roles_id', 'perms');
                     user = _.extend(user, newAttributes);
 
-                    user.save(function(err) {
-                        var errors, code = 200;
-
-                        if (!err) {
-                            // send 204 No Content
-                            res.send();
-                        } else {
-                            errors = utils.parseDbErrors(err, config.error_messages);
-                            if (errors.code) {
-                                code = errors.code;
-                                delete errors.code;
-                                log(err);
-                            }
-                            res.json(errors, code);
+                    user.calculateAllPerms(user, function(err, u) {
+                        if (err) {
+                             errors = utils.parseDbErrors(err, config.error_messages);
+                             if (errors.code) {
+                                 code = errors.code;
+                                 delete errors.code;
+                                 log(err);
+                             }
+                             res.json(errors, code);
+                             return;
                         }
+                        u.save(function(err) {
+                            var errors, code = 200;
+
+                            if (!err) {
+                                // send 204 No Content
+                                res.send();
+                            } else {
+                                errors = utils.parseDbErrors(err, config.error_messages);
+                                if (errors.code) {
+                                    code = errors.code;
+                                    delete errors.code;
+                                    log(err);
+                                }
+                                res.json(errors, code);
+                            }
+                        });
                     });
                 }
             );

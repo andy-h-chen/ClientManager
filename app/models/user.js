@@ -35,8 +35,8 @@ module.exports = function(mongoose) {
             required : true
         },
         roles_id: [{type: mongoose.Schema.Types.ObjectId, ref: 'Role'}],
-        perms: [{id: {type:String}, allow: {type: Boolean}, deny: {type: Boolean}, inherit_allow: {type: Boolean}, inherit_deny: {type: Boolean}}]
-        //permissions_id: [{type: mongoose.Schema.Types.ObjectId, ref: 'Permission'}]
+        perms: [{id: {type:String}, allow: {type: Boolean}, deny: {type: Boolean}, inherit_allow: {type: Boolean}, inherit_deny: {type: Boolean}}],
+        all_perms: [{id: {type:String}, key: {type:String}}]
     }, {collection: 'users'});
 
     // similar to SQL's like
@@ -52,6 +52,17 @@ module.exports = function(mongoose) {
         var query = params.fields ? Model.find({}, params.fields) : Model.find();
 
         query.exec(callback);
+    };
+
+    User.methods.hasAccess = function (key) {
+        if (!key)
+            return false;
+
+        for (var i=0; i<this.all_perms.length; i++) {
+            if (this.all_perms[i].key == key)
+                return true;
+        }
+        return false;
     };
 
     User.statics.findById = function findById(id, details, callback) {
@@ -137,12 +148,69 @@ module.exports = function(mongoose) {
     };
 
     User.statics.findByUsername = function findByUsername(username, callback) {
-        var Model = mongoose.model('User');
-
+        var Model = mongoose.model('User'),
+            Perms = mongoose.model('Permission');
         if (!username || username.length <= 2) {
             callback(null, null);
         } else {
-            Model.findOne().where('username', username).exec(callback);
+            Model.findOne().where('username', username).populate('roles_id').exec(function (err, user) {
+                if (err) {
+                    callback(err);
+                    return;
+                }
+                callback(null, user);
+            });
+        }
+    };
+
+    User.methods.calculateAllPerms = function (user, callback) {
+        var Roles = mongoose.model('Role'),
+            Perms = mongoose.model('Permission');
+        if (!user) {
+            callback(null, null);
+        } else {
+            Roles.find().where('_id').in(user.roles_id).exec(function (err, roles) {
+                if (err) {
+                    callback(err);
+                    return;
+                }
+                var u = user.toObject(),
+                    p = [];
+                for (var i=0; i<roles.length; i++) {
+                    for (var j=0; j<roles[i].permissions_id.length; j++)
+                        p.push(roles[i].permissions_id[j].toString());
+                }
+                p = p.filter(function(item, pos) { return p.indexOf(item) == pos; });
+                for (var i=0; i<u.perms.length; i++) {
+                    var result;
+                    p.find(function (e, index, array) {
+                        if (u.perms[i].id == e) {
+                            result = {index: index, id: e};
+                            return e;
+                        } else {
+                            result = null;
+                        }
+                    });
+                    if (!result && u.perms[i].allow) {
+                        p.push(u.perms[i].id);
+                    } else if (u.perms[i].deny && result) {
+                        p.splice(result.index, 1);
+                    }
+                }
+                Perms.find().where('_id').in(p).exec(function (err, perms) {
+                    if (err) {
+                        callback(err);
+                        return;
+                    }
+                    var all_perms = [];
+                    for (var i=0; i<perms.length; i++) {
+                        all_perms.push({id: perms[i]._id.toString(), key: perms[i].key});
+                    }
+                    user.all_perms = all_perms;
+                    console.log(user);
+                    callback(null, user);
+                });
+            });
         }
     };
     User.set('toObject', {getters: true});

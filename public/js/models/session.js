@@ -1,10 +1,9 @@
 define('SessionModel', [
-    'App',
     'UserModel',
     'underscore',
     'jquery',
     'backbone'
-], function (App, UserModel, _, $, Backbone) {
+], function (UserModel, _, $, Backbone) {
     var SessionModel = Backbone.Model.extend({
         defaults: {
             logged_in: false,
@@ -15,7 +14,10 @@ define('SessionModel', [
             this.user = new UserModel({});
         },
         url: function() {
-            return App.API + '/auth';
+            return require('App').API + '/auth';
+        },
+        isLoggedIn: function() {
+            return this.logged_in;
         },
         updateSessionUser: function(userData) {
             this.user.set(_.pick(userData, _.keys(this.user.defaults)));
