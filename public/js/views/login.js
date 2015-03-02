@@ -30,8 +30,8 @@ define('LoginView', [
                     var router = App.getRouter();
                     var header = router.getHeaderView();
                     header.updateLoginStatus('Logout');
+                    router.navigate('#', { trigger: true });
                     router.loginUserInfo();
-                    
                 },
                 error: function(err) {
                     console.log('ERROR', err);

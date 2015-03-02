@@ -1,0 +1,465 @@
+
+------
+Error: TypeError: Cannot read property 'connect.sid' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:213:9)
+    at Object.methodOverride [as handle] (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js:35:5)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:204:15)
+------
+Error: TypeError: Cannot read property 'connect.sid' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:213:9)
+    at Object.methodOverride [as handle] (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js:35:5)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:204:15)
+------
+Error: TypeError: Cannot read property 'connect.sid' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:201:11)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:213:9)
+    at Object.methodOverride [as handle] (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js:35:5)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:204:15)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method 'findById' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: Error: Invalid ObjectId
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Object #<Query> has no method 'lean'
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Object #<Query> has no method 'lean'
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: ReferenceError: Permission is not defined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method '__' of undefined
+    at Object.log.err (/Users/andchen/exercises/clientmanager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/clientmanager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/clientmanager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/clientmanager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method '__' of undefined
+    at Object.log.err (/Users/andchen/exercises/clientmanager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/clientmanager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/clientmanager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/clientmanager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot call method '__' of undefined
+    at Object.log.err (/Users/andchen/exercises/clientmanager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/clientmanager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/clientmanager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/clientmanager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/clientmanager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot read property 'all_perms' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot read property 'all_perms' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Cannot read property 'all_perms' of undefined
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+------
+Error: TypeError: Object { _id: 54aca027b022a3594226e79f,
+  username: 'bob',
+  password: 'chenhuan',
+  email: 'bob@example.com',
+  roles: [ { name: 'Administrators' } ],
+  permissions_id: [ '54acb9dac73e1c48c60deb60' ],
+  all_perms: 
+   [ { key: 'publish_comments', id: '54bb4a9abd2e776a4426b658' },
+     { key: 'videos', id: '54bb4aa0bd2e776a4426b659' },
+     { key: 'status', id: '54bb4aa8bd2e776a4426b65a' },
+     { key: 'indoor', id: '54bb4aaebd2e776a4426b65b' },
+     { key: 'sensors', id: '54bb4ab4bd2e776a4426b65c' },
+     { key: 'reports', id: '54bb4abcbd2e776a4426b65d' },
+     { key: 'access_admin', id: '54bb4ae2bd2e776a4426b65e' },
+     { key: 'p1', id: '54dc3e47334d87000000002f' } ],
+  perms: 
+   [ { deny: true, allow: false, id: '54bb4ff2bd2e776a4426b665' },
+     { deny: true, allow: false, id: '54bc35b1018f126247a1916b' },
+     { deny: true, allow: false, id: '54bc76ff5ec3f7000000000d' },
+     { deny: false, allow: true, id: '54dc3e47334d87000000002f' } ],
+  roles_id: [ 54b22097d683fdccecf7fa35 ] } has no method 'hasAccess'
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)

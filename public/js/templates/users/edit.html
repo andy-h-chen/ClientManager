@@ -15,7 +15,9 @@
               <span class="add-on">
                 <i class="icon-user"></i>
               </span>
-              <%= user.username %>
+              <%if (user.username){%><%=user.username%><%} else{%>
+              <input type='text' class='input-xlarge' id='username-input'/>
+              <%}%>
             </div>
           </div>
         </div>
@@ -40,12 +42,14 @@
               <span class="add-on">
                 <i class="icon-briefcase"></i>
               </span>
-              <table style="width: 100%">
+              <div class='table-responsive'>
+              <table class="table table-striped">
               <% _.each(user.roles, function(role) { %>
                 <tr><td>
                 <%= role.name%><td>Member <input type="radio" name="<%=role._id%>" value="allow" <%if(role.allow){%> checked<%}%>><td>Not Member <input type="radio" name="<%=role._id%>" value="deny" <%if(!role.allow){%> checked<%}%>> </tr>
               <% }); %>
               </table>
+              </div>
             </div>
           </div>
         </div>
@@ -57,7 +61,8 @@
               <span class="add-on">
                 <i class="icon-time"></i>
               </span>
-              <table style="width: 100%">
+              <div class='table-responsive'>
+              <table class='table table-striped'>
               <% _.each(user.perms, function(perm) { %>
                 <tr><td>
                 <%= perm.name%>
@@ -68,6 +73,7 @@
                 </tr>
               <% }); %>
               </table>
+              </div>
             </div>
           </div>
         </div>

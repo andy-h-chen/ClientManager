@@ -21,8 +21,9 @@ define('Router', [
     'RoleListView',
     'RoleModel',
     'RoleView',
-    'RoleEditView'
-], function($, _, Backbone, HomeView, HeaderView, LoginView, ClientListView, ClientView, ClientEditView, Client, UserListView, UserView, User, UserEditView, PermissionListView, PermissionCollection, Permission, PermissionView, PermEditView, RoleListView, Role, RoleView, RoleEditView) {
+    'RoleEditView',
+    'RoleCollection'
+], function($, _, Backbone, HomeView, HeaderView, LoginView, ClientListView, ClientView, ClientEditView, Client, UserListView, UserView, User, UserEditView, PermissionListView, PermissionCollection, Permission, PermissionView, PermEditView, RoleListView, Role, RoleView, RoleEditView, RoleCollection) {
     var AppRouter, initialize;
 
     AppRouter = Backbone.Router.extend({
@@ -36,6 +37,7 @@ define('Router', [
             'clients/:id'       : 'showClient',
             'clients/:id/edit'  : 'editClient',
             'users'             : 'showUsers',
+            'users/new'         : 'addUser',
             'users/:id'         : 'showUser',
             'users/:id/edit'    : 'editUser',
             'perms'             : 'showPermissions',
@@ -218,6 +220,46 @@ define('Router', [
             }
         });
     },
+
+    addUser: function() {
+        var that = this, model, view;
+        that.permissions = new PermissionCollection();
+        that.roles = new RoleCollection();
+        this.permissions.fetch({
+            success: function(collection) {
+                that.roles.fetch({
+                    success: function(roleCollection) {
+                        model = new User({perms: collection.toJSON(), roles: roleCollection.toJSON()});
+                        view  = new UserEditView({ model: model });
+                        that.elms['page-content'].html(view.render().el);
+                        view.on('back', function() {
+                            delete view;
+                            that.navigate('#/users', { trigger: true });
+                        });
+                        view.model.on('save-success', function(id) {
+                            delete view;
+                            that.navigate('#/users/' + id, { trigger: true });
+                        });
+                    },
+                    error:function(coll, res) {
+                        if (res.status === 404) {
+                            // TODO: handle 404 Not Found
+                        } else if (res.status === 500) {
+                            // TODO: handle 500 Internal Server Error
+                        }
+                    }
+                });
+            },
+            error: function(coll, res) {
+                if (res.status === 404) {
+                    // TODO: handle 404 Not Found
+                } else if (res.status === 500) {
+                    // TODO: handle 500 Internal Server Error
+                }
+            }
+        });
+    },
+
     editUser: function(id) {
       var that = this, model, view;
 

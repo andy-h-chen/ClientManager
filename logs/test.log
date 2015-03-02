@@ -1,0 +1,28 @@
+
+------
+Error: Error: test
+    at Object.log.err (/Users/andchen/exercises/ClientManager/lib/logger.js:23:11)
+    at Object.<anonymous> (/Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:27:11)
+    at Object.handle (/Users/andchen/exercises/ClientManager/node_modules/express/lib/http.js:192:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:199:17)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:219:24)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:269:37)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:239:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+    at nextRoute (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:209:7)
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:274:11)
+    at /Users/andchen/exercises/ClientManager/app/controllers/errors_controller.js:11:7
+    at callbacks (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:272:11)
+    at param (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:246:11)
+    at pass (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:280:5)
+    at Object.Router.middleware [as handle] (/Users/andchen/exercises/ClientManager/node_modules/express/lib/router/index.js:45:10)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:204:15)
+    at Object.methodOverride [as handle] (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js:35:5)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:204:15)
+    at Object.bodyParser [as handle] (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js:88:61)
+    at next (/Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/http.js:204:15)
+    at /Users/andchen/exercises/ClientManager/node_modules/express/node_modules/connect/lib/middleware/static.js:150:11
+    at Object.oncomplete (fs.js:107:15)
