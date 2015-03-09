@@ -22,6 +22,34 @@
           </div>
         </div>
 
+        <%if (!user.username){%>
+        <div class="control-group">
+          <label for="password-input" class="control-label">Password</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-user"></i>
+              </span>
+              <input type='password' class='input-xlarge' id='password-input'/>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="password-input" class="control-label">Password repeat</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">
+                <i class="icon-user"></i>
+              </span>
+              <input type='password' class='input-xlarge' id='passwordrepeat-input'/>
+
+            </div>
+          </div>
+        </div>
+       <%}%>
+
         <div class="control-group">
           <label for="email-input" class="control-label">Email</label>
           <div class="controls">
@@ -79,8 +107,8 @@
         </div>
 
         <div class="form-actions">
-          <a class="btn save-btn">Save</a>
-          <a class="btn back-btn">Back</a>
+          <a class="btn btn-default save-btn">Save</a>
+          <a class="btn btn-default back-btn">Back</a>
         </div>
 
       </fieldset>

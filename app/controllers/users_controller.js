@@ -66,7 +66,6 @@ UsersController = function(app, mongoose, config) {
                             var errors, code = 200;
 
                             if (!err) {
-                                // send 204 No Content
                                 res.send();
                             } else {
                                 errors = utils.parseDbErrors(err, config.error_messages);
@@ -83,33 +82,69 @@ UsersController = function(app, mongoose, config) {
             );
         });
     });
-/*
-  app.post(v1 + '/clients', function create(req, res, next) {
+
+  app.post(v1 + '/users', function create(req, res, next) {
     log('app.post', req.url);
-    var newClient;
+    var newUser;
 
     // disallow other fields besides those listed below
-    newClient = new Client(_.pick(req.body, 'name', 'email', 'born', 'company'));
-    newClient.save(function(err) {
-      var errors, code = 200, loc;
-
-      if (!err) {
-        loc = config.site_url + v1 + '/clients/' + newClient._id;
-        res.setHeader('Location', loc);
-        res.json(newClient, 201);
-      } else {
-        errors = utils.parseDbErrors(err, config.error_messages);
-        if (errors.code) {
-          code = errors.code;
-          delete errors.code;
-          // TODO: better better logging system
-          log(err);
+    newUser = new User(_.pick(req.body, 'username', 'email', 'password', 'pwr', 'roles_id', 'perms'));
+    console.log(newUser);
+    /*
+    if (!newUser.pw || !newUser.pwr || newUser.pw !== newUser.pwr) {
+        var err = {};
+        err.password = 'Does not match.';
+        err.passwordrepeat = 'Does not match';
+        res.json({errors: err}, 200);
+        return;
+    }*/
+    console.log('before save');
+    newUser.calculateAllPerms(newUser, function(err, u) {
+        console.log(u);
+        if (err) {
+             errors = utils.parseDbErrors(err, config.error_messages);
+             if (errors.code) {
+                 code = errors.code;
+                 delete errors.code;
+                 log(err);
+             }
+             res.json(errors, code);
+             return;
         }
-        res.json(errors, code);
-      }
+        u.save(function(err) {
+            var errors, code = 200;
+
+            if (!err) {
+                loc = config.site_url + app.v1 + '/users/' + newUser._id;
+                res.setHeader('Location', loc);
+                res.json(newUser, 201);
+            } else {
+                errors = utils.parseDbErrors(err, config.error_messages);
+                if (errors.code) {
+                    code = errors.code;
+                    delete errors.code;
+                    log(err);
+                }
+                res.json(errors, code);
+            }
+        });
     });
+
   });
 
+  app.del(v1 + '/users/:id', function destroy(req, res, next) {
+    User.findById(req.params.id, false /* details */, function(err, user) {
+      checkErr(
+        next,
+        [{ cond: err }, { cond: !user, err: new NotFound('json') }],
+        function() {
+          user.remove();
+          res.json({});
+        }
+      );
+    });
+  });
+/*
   app.put(v1 + '/clients/:id', function update(req, res, next) {
     Client.findById(req.params.id, function(err, client) {
       checkErr(
@@ -143,18 +178,7 @@ UsersController = function(app, mongoose, config) {
     });
   });
 
-  app.del(v1 + '/clients/:id', function destroy(req, res, next) {
-    Client.findById(req.params.id, function(err, client) {
-      checkErr(
-        next,
-        [{ cond: err }, { cond: !client, err: new NotFound('json') }],
-        function() {
-          client.remove();
-          res.json({});
-        }
-      );
-    });
-  });
+
 */
 };
 

@@ -87,7 +87,6 @@ RolesController = function(app, mongoose, config) {
         newRole = new Role(_.pick(req.body, 'name', 'permissions_id'));
         newRole.save(function(err) {
             var errors, code = 200, loc;
-
             if (!err) {
                 loc = config.site_url + app.v1 + '/roles/' + newRole._id;
                 res.setHeader('Location', loc);

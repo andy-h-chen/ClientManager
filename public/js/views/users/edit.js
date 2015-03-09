@@ -38,27 +38,37 @@ define('UserEditView', [
       this.trigger('back');
     },
     saveUser: function(e) {
-      var name, born, email, company, that;
+      var username, password, passwordrepeat, email, that;
 
       e.preventDefault();
 
-      that    = this;
-      email   = $.trim($('#email-input').val());
+      that = this;
+      username = $.trim($('#username-input').val());
+      password = $.trim($('#password-input').val());
+      passwordrepeat = $.trim($('#passwordrepeat-input').val());
+      if (password != passwordrepeat) {
+          that.renderErrMsg('Passwords do not match.');
+          return;
+      }
+      email = $.trim($('#email-input').val());
       rolesButtons = $("#roles-div [value='allow']input:radio:checked").toArray();
-      roles   = [];
+      roles = [];
       rolesButtons.forEach(function (r) {
         roles.push(r.name);
       });
       permsButtons = $("#perms-div [value='deny']input:radio:checked, #perms-div [value='allow']input:radio:checked").toArray();
       perms = [];
       permsButtons.forEach(function (p) {
-        perms.push({id: p.name, allow: p.value === 'allow', deny: p.value === 'deny'});
+          perms.push({id: p.name, allow: p.value === 'allow', deny: p.value === 'deny'});
       });
 
       this.model.save({
+        username: username,
         email   : email,
         roles_id: roles,
-        perms   : perms
+        perms   : perms,
+        password: password,
+        pwr     : passwordrepeat
       }, {
         silent  : false,
         sync    : true,
